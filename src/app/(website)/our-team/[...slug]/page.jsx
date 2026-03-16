@@ -100,7 +100,7 @@ const excom21 = [
     imageUrl: "/images/committee/rafat-200-200.jpeg",
     email: "mailto: sakibrafat82@gmail.com",
     facebookUrl: "https://www.facebook.com/sadmansakib.sadmansakib.5",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/sadman18/",
   },
   {
     name: "Md. Zilan Uddin Saif",
@@ -753,7 +753,7 @@ const excom25 = [
   {
     name: "Md. Shihab Uddin",
     email: "mailto:md.shihab@ieee.org",
-     facebookUrl: "https://www.facebook.com/mdshihab9995?mibextid=ZbWKwL",
+    facebookUrl: "https://www.facebook.com/mdshihab9995?mibextid=ZbWKwL",
     linkedinUrl: "https://www.linkedin.com/in/mdshihab26/",
     recognition: "BSc. in CSE",
     role: "Membership Development Coordinator",
@@ -1247,7 +1247,7 @@ const vol24 = [
     name: "Ebrahim Hanif",
     role: "volunteer",
     recognition: "BSc. in CSE",
-    imageUrl: "/images/committee/com24/volunteers/Ebrahim Hanif.jpg",
+    imageUrl: "/images/committee/com24/volunteers/EbrahimHanif.jpeg",
     email: "ebrahimhanif810@gmail.com",
     facebookUrl: "https://www.facebook.com/share/156HEPVqpN/",
     linkedinUrl: "https://www.linkedin.com/in/ebrahimhanif12",
@@ -1408,16 +1408,209 @@ const vol24 = [
 ];
 
 const vol25 = [
-    {
-    name: "Arnob Aich Anurag",
+  {
+    name: "Mohona Musarrat",
     role: "volunteer",
-    recognition: "BSc. in CSE",
-    imageUrl: "/images/committee/com24/volunteers/Arnob Aich Anurag.jpg",
-    email: "arnob.aich@ieee.org",
-    facebookUrl: "https://www.facebook.com/share/1EBT4ccQST/",
-    linkedinUrl: "https://www.linkedin.com/in/arnob-aich-643a99306/",
+    recognition: "BSc. in CNCS",
+    imageUrl: "/images/committee/com25/volunteers/mohona.png",
+    email: "miashamahdiyat17@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/1MehcKb1mr/",
+    linkedinUrl: "http://www.linkedin.com/in/mohona-musarrat-26a9323b7",
   },
-]
+  {
+    name: "Rehnuma Tasnim Promi",
+    role: "volunteer",
+    recognition: "",
+    imageUrl: "/images/committee/com25/volunteers/promi.png",
+    email: "rehnumatasnimpromi@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/12KHeYfviAW/",
+    linkedinUrl: "https://www.linkedin.com/in/rehnuma-tasnim-55b963376/",
+  },
+  {
+    name: "Mahdiat Rahman",
+    role: "volunteer",
+    recognition: "BSc. in DS",
+    imageUrl: "/images/committee/com25/volunteers/mahidat.png",
+    email: "mahdiat.rahman02@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/188dWeKSSY/",
+    linkedinUrl: "http://www.linkedin.com/in/mahdiat-rahman",
+  },
+  {
+    name: "Namia Rahman",
+    role: "volunteer",
+    recognition: "Bsc. in CNCS",
+    imageUrl: "/images/committee/com25/volunteers/namia.png",
+    email: "namiarahman@gmail.com",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100075216513113",
+    linkedinUrl: "http://linkedin.com/in/namia-rahman-1057a6270",
+  },
+
+  {
+    name: "Abdullah Al Arafat",
+    role: "volunteer",
+    recognition: "Bsc. in EEE",
+    imageUrl: "/images/committee/com25/volunteers/abdullah.png",
+    email: "abdullaharafat120@gmail.com",
+    facebookUrl: "https://www.facebook.com/Arafatabdullah.arafat.2",
+    linkedinUrl: "",
+  },
+  {
+    name: "Hasibul Haque",
+    role: "volunteer",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/com25/volunteers/hasibul.png",
+    email: "hasishanto999@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/1AAH5WAHJq/",
+    linkedinUrl: "https://www.linkedin.com/in/hasibul-haque-shanto-718b8a360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "Md. Sadman Hossain",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/sadman.png",
+    email: "sadmanhsn14@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/1JByoeRn5n/",
+    linkedinUrl: "https://www.linkedin.com/in/sadman-hossain-333a832a1?utm_source=share&&utm_campaign=share_via&&utm_content=profile&&utm_medium=ios_app",
+  },
+  {
+    name: "Miftahul Jannat",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/miftahul.png",
+    email: "miftahuljannat.work@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/1AdnU1HxtK/",
+    linkedinUrl: "http://www.linkedin.com/in/miftahul-jannat-4b4701324",
+  },
+  {
+    name: "Anika Sharmin Nikita",
+    role: "volunteer",
+    recognition: "Bsc. in EEE",
+    imageUrl: "/images/committee/com25/volunteers/nikita.png",
+    email: "anikankt@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/1AWGCmTsm7/",
+    linkedinUrl: "",
+  },
+
+  {
+    name: "MD.Mehedi Hasan Nayeem",
+    role: "volunteer",
+    recognition: "Bsc. in IPE",
+    imageUrl: "/images/committee/com25/volunteers/nayem.png",
+    email: "nmehedi11122@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/1FXvXTsy7Y/",
+    linkedinUrl: "https://www.linkedin.com/in/mehedi-hasan-nayeem-1a51013aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "MD Foize Khan Rion",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/rion.png",
+    email: "rion801@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/18yhpPDPYv/",
+    linkedinUrl: "https://bd.linkedin.com/in/rionkhan801",
+  },
+
+  {
+    name: "Rashadul Islam Rafy",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/rashedul.png",
+    email: "www.rashadulislam1971@gmail.com",
+    facebookUrl: "https://www.facebook.com/rashedulislamrafi1971/",
+    linkedinUrl: "https://www.linkedin.com/in/rashedul-rafi-488a54267/",
+  },
+  {
+    name: "Md. Shafiqur Rahman",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/shafiqur.png",
+    email: "sagorsardar20202021@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/18JxdFuKPY/",
+    linkedinUrl: "",
+  },
+  {
+    name: "Koushik Saha",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/koushik.png",
+    email: "koushiksaha6127@gmail.com",
+    facebookUrl: "https://www.facebook.com/Koushiksaha12345",
+    linkedinUrl: "https://www.linkedin.com/in/koushik-saha-793035345/",
+  },
+  {
+    name: "Zawadullah Bhuiyan",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/zawad.png",
+    email: "zawadullahbhuiyan@gmail.com",
+    facebookUrl: "",
+    linkedinUrl: "https://bd.linkedin.com/in/zawad-sanjid-19b29a376",
+  },
+  {
+    name: "Md. Ishmam Abdullah",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/ishmam.png",
+    email: "ishmam105@gmail.com",
+    facebookUrl: "facebook.com/ishmam302",
+    linkedinUrl: "https://www.linkedin.com/in/ishmam-bot/",
+  },
+  {
+    name: "Jannatul Adan Adreeta",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/jannatul.png",
+    email: "jannatuladreeta@gmail.com",
+    facebookUrl: "https://www.facebook.com/jannatuladreeta/",
+    linkedinUrl: "https://www.linkedin.com/in/jannatul-adan-adreeta-856561398?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+  },
+  {
+    name: "Md.Nasif Rafidi",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/nasif.png",
+    email: "rafidinasif117@gmail.com",
+    facebookUrl: "https://www.facebook.com/profile.php?id=61566640171487",
+    linkedinUrl: "http://www.linkedin.com/in/md-nasif-rafidi-63a13b265",
+  },
+  {
+    name: "Farhan Chowdhury",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/farhan.png",
+    email: "farhanahmed7389@gmail.com",
+    facebookUrl: "https://www.facebook.com/farhanahmed738",
+    linkedinUrl: "",
+  },
+  {
+    name: "Sadman Sakib Chouwdhury",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/mahin.png",
+    email: "mahinc021@gmail.com",
+    facebookUrl: "https://www.facebook.com/MahinChowdhury55",
+    linkedinUrl: "",
+  },
+  {
+    name: "Md Abdullah All Morshed",
+    role: "volunteer",
+    recognition: "Bsc. in EEE",
+    imageUrl: "/images/committee/com25/volunteers/morshed.png",
+    email: "abdullahmorshed601@gmail.com",
+    facebookUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/morshed-abdullah-559978391",
+  },
+  {
+    name: "Md.Faisal Iqbal Biswas",
+    role: "volunteer",
+    recognition: "Bsc. in EEE",
+    imageUrl: "/images/committee/com25/volunteers/foisal.png",
+    email: "iqbalmdfaisal83@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/199tCvfJ5A/",
+    linkedinUrl: "https://www.linkedin.com/in/faysal-iqbal-5b80a1377",
+  },
+
+];
 
 const wie22 = [
   {
@@ -1527,6 +1720,39 @@ const wie24 = [
   },
 ];
 
+const wie25 = [
+
+
+  {
+    name: "Nawshin Prima",
+    email: "naprima@ieee.org",
+    facebookUrl: "https://www.facebook.com/nawshin.prima.35",
+    linkedinUrl: "https://www.linkedin.com/in/na-prima-0baba0267",
+    recognition: "BSc. in CSE",
+    role: "Chapter Chairperson",
+    imageUrl: "/images/committee/com24/Excom/Nowshin_Prima.jpg",
+  },
+
+  {
+    name: "Rokeya Seraj",
+    role: "Chapter Secretary",
+    recognition: "BSc. in COE",
+    imageUrl: "/images/committee/com24/volunteers/Rokeya Binta Seraj .png",
+    email: "rokeyaseraj2209@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/15bHiRfjTA/",
+    linkedinUrl: "https://www.linkedin.com/in/rokeya-seraj-63298a2b8/",
+  },
+  {
+    name: "Mst. Sharaf Anika Esha",
+    role: "Chapter Treasurer",
+    recognition: "BSc. in CSE",
+    imageUrl: "/images/committee/com24/volunteers/MST.SHARAF ANIKA ESHA.jpg",
+    email: "sharafanikaesha4299@gmail.com",
+    facebookUrl: "https://www.facebook.com /share/18fedc2J4R/",
+    linkedinUrl: "https://www.linkedin.com/in/sharaf-anika-esha-988076251/",
+  },
+];
+
 const ias22 = [
   {
     name: "Khandoker Mainul Islam",
@@ -1619,6 +1845,28 @@ const ias24 = [
   },
 ];
 
+const ias25 = [
+  {
+    name: "Md. Nahiduzzaman",
+    role: "Chapter Chairperson",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/com24/volunteers/Md. Nahiduzzaman.jpg",
+    email: "naimislam108105@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/15q4bTNVEB/",
+    linkedinUrl: "#",
+  },
+  {
+    name: "MD.Mehedi Hasan Nayeem",
+    role: "Chapter Secretary",
+    recognition: "Bsc. in IPE",
+    imageUrl: "/images/committee/com25/volunteers/nayem.png",
+    email: "nmehedi11122@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/1FXvXTsy7Y/",
+    linkedinUrl: "https://www.linkedin.com/in/mehedi-hasan-nayeem-1a51013aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+
+];
+
 const mtts22 = [
   {
     name: "Golam Masrur Chowdhury",
@@ -1709,6 +1957,36 @@ const mtts24 = [
     imageUrl: "/images/committee/mohan.jpg",
   },
 ];
+const mtts25 = [
+  {
+    name: "Ebrahim Hanif",
+    role: "Chapter Chairperson",
+    recognition: "BSc. in CSE",
+    imageUrl: "/images/committee/com24/volunteers/EbrahimHanif.jpeg",
+    email: "ebrahimhanif810@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/156HEPVqpN/",
+    linkedinUrl: "https://www.linkedin.com/in/ebrahimhanif12",
+  },
+  {
+    name: "Abdullah Al Arafat",
+    role: "Chapter Secretary",
+    recognition: "Bsc. in EEE",
+    imageUrl: "/images/committee/com25/volunteers/abdullah.png",
+    email: "abdullaharafat120@gmail.com",
+    facebookUrl: "https://www.facebook.com/Arafatabdullah.arafat.2",
+    linkedinUrl: "",
+  },
+  {
+    name: "Namia Rahman",
+    role: "Chapter Treasurer",
+    recognition: "Bsc. in CNCS",
+    imageUrl: "/images/committee/com25/volunteers/namia.png",
+    email: "namiarahman@gmail.com",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100075216513113",
+    linkedinUrl: "http://linkedin.com/in/namia-rahman-1057a6270",
+  },
+];
+
 
 const embs22 = [
   {
@@ -1809,6 +2087,36 @@ const embs24 = [
   },
 ];
 
+const embs25 = [
+  {
+    name: "Tasfia Tasnim",
+    role: "Chapter Chairperson",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/com24/volunteers/Tasfia Tasnim.jpg",
+    email: "ttasnimty@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/1B9bhXQxkf/",
+    linkedinUrl: "https://www.linkedin.com/in/tasfia-tasnim-846489315/",
+  },
+  {
+    name: "Md.Nasif Rafidi",
+    role: "Chapter Secretary",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/nasif.png",
+    email: "rafidinasif117@gmail.com",
+    facebookUrl: "https://www.facebook.com/profile.php?id=61566640171487",
+    linkedinUrl: "http://www.linkedin.com/in/md-nasif-rafidi-63a13b265",
+  },
+  {
+    name: "Hasibul Haque",
+    role: "chapter treasurer",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/com25/volunteers/hasibul.png",
+    email: "hasishanto999@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/1AAH5WAHJq/",
+    linkedinUrl: "https://www.linkedin.com/in/hasibul-haque-shanto-718b8a360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+];
+
 const cs22 = [
   {
     name: "Md. Sums Dip Sarker",
@@ -1905,6 +2213,36 @@ const cs24 = [
     recognition: "BSc. in EEE",
     role: "Chapter Treasurer",
     imageUrl: "/images/committee/com24/Excom/Shafayet_Ador.png",
+  },
+];
+
+const cs25 = [
+  {
+    name: "Arnob Aich Anurag",
+    role: "Chapter Chairperson",
+    recognition: "BSc. in CSE",
+    imageUrl: "/images/committee/com24/volunteers/Arnob Aich Anurag.jpg",
+    email: "arnob.aich@ieee.org",
+    facebookUrl: "https://www.facebook.com/share/1EBT4ccQST/",
+    linkedinUrl: "https://www.linkedin.com/in/arnob-aich-643a99306/",
+  },
+  {
+    name: "Md. Sadman Hossain",
+    role: "Chapter Secretary",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/sadman.png",
+    email: "sadmanhsn14@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/1JByoeRn5n/",
+    linkedinUrl: "https://www.linkedin.com/in/sadman-hossain-333a832a1?utm_source=share&&utm_campaign=share_via&&utm_content=profile&&utm_medium=ios_app",
+  },
+  {
+    name: "Miftahul Jannat",
+    role: "Chapter Treasurer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/miftahul.png",
+    email: "miftahuljannat.work@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/1AdnU1HxtK/",
+    linkedinUrl: "http://www.linkedin.com/in/miftahul-jannat-4b4701324",
   },
 ];
 
@@ -2588,17 +2926,17 @@ export default function Page({ params }) {
       case "executive-committee":
         return <EXCOM25 people={excom25} year={2025} />;
       case "volunteers":
-        return <VOL23 people={vol24} year={2024} />;
+        return <VOL23 people={vol25} year={2025} />;
       case "cs-committee":
-        return <CS23 people={cs24} year={2024} />;
+        return <CS23 people={cs25} year={2025} />;
       case "ias-committee":
-        return <Ias people={ias24} year={2024} />;
+        return <Ias people={ias25} year={2025} />;
       case "mtts-committee":
-        return <Mtts people={mtts24} year={2024} />;
+        return <Mtts people={mtts25} year={2025} />;
       case "embs-committee":
-        return <Embs people={embs24} year={2024} />;
+        return <Embs people={embs25} year={2025} />;
       case "wie-committee":
-        return <Wie people={wie24} year={2024} />;
+        return <Wie people={wie25} year={2025} />;
       default:
         return notFound();
     }
@@ -2606,11 +2944,11 @@ export default function Page({ params }) {
     return notFound();
   else if (params.slug[1]) {
     switch (params.slug[1]) {
-    
+
       case "executive-committee":
         if (params.slug[0] == 2025)
           return <EXCOM people={excom25} year={2025} />;
-         if (params.slug[0] == 2024)
+        if (params.slug[0] == 2024)
           return <EXCOM people={excom24} year={2024} />;
         if (params.slug[0] == 2023)
           return <EXCOM people={excom23} year={2023} />;
@@ -2618,7 +2956,7 @@ export default function Page({ params }) {
           return <EXCOM people={excom22} year={2022} />;
         if (params.slug[0] == 2021)
           return <EXCOM people={excom21} year={2021} />
-        
+
       //   if (params.slug[0] == 2020)
       //     return <EXCOM20 people={excom20} year={2020} />;
       // if (params.slug[0] == 2019)
@@ -2628,27 +2966,33 @@ export default function Page({ params }) {
       //   return <EXCOM people={excom23} year={2023} />;
 
       case "volunteers":
+        if (params.slug[0] == 2025) return <VOL23 people={vol25} year={2025} />;
         if (params.slug[0] == 2024) return <VOL23 people={vol24} year={2024} />;
         if (params.slug[0] == 2023) return <VOL23 people={vol23} year={2023} />;
         if (params.slug[0] == 2022) return <VOL people={vol22} year={2022} />;
         if (params.slug[0] == 2021) return <VOL people={vol21} year={2021} />;
       case "cs-committee":
+        if (params.slug[0] == 2025) return <CS23 people={cs25} year={2025} />;
         if (params.slug[0] == 2024) return <CS23 people={cs24} year={2024} />;
         if (params.slug[0] == 2023) return <CS23 people={cs23} year={2023} />;
         if (params.slug[0] == 2022) return <CS23 people={cs22} year={2022} />;
       case "ias-committee":
+        if (params.slug[0] == 2025) return <Ias people={ias25} year={2025} />;
         if (params.slug[0] == 2024) return <Ias people={ias24} year={2024} />;
         if (params.slug[0] == 2023) return <Ias people={ias23} year={2023} />;
         if (params.slug[0] == 2022) return <Ias people={ias22} year={2022} />;
       case "mtts-committee":
+          if (params.slug[0] == 2025) return <Mtts people={mtts25} year={2025} />;
         if (params.slug[0] == 2024) return <Mtts people={mtts24} year={2024} />;
         if (params.slug[0] == 2023) return <Mtts people={mtts23} year={2023} />;
         if (params.slug[0] == 2022) return <Mtts people={mtts22} year={2022} />;
       case "embs-committee":
+        if (params.slug[0] == 2025) return <Embs people={embs25} year={2025} />;
         if (params.slug[0] == 2024) return <Embs people={embs24} year={2024} />;
         if (params.slug[0] == 2023) return <Embs people={embs23} year={2023} />;
         if (params.slug[0] == 2022) return <Embs people={embs22} year={2022} />;
       case "wie-committee":
+        if (params.slug[0] == 2025) return <Wie people={wie25} year={2025} />;
         if (params.slug[0] == 2024) return <Wie people={wie24} year={2024} />;
         if (params.slug[0] == 2023) return <Wie people={wie23} year={2023} />;
         if (params.slug[0] == 2022) return <Wie people={wie22} year={2022} />;

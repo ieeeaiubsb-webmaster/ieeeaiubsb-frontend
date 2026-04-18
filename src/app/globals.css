@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.react-photo-album--photo{
+  border-radius: 5px;
+}
+
+#volunteer-recruitment-form input, textarea {
+  border-width: 0px !important;
+  border-color: transparent !important;
+  padding: 0px 25px 0px 0px;
+}
+
+#volunteer-recruitment-form input:focus, #volunteer-recruitment-form textarea:focus{
+  border-color: transparent !important;
+  --tw-ring-color: transparent !important;
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */

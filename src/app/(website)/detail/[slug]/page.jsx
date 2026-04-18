@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import axios from "axios";
 
-// Reuse the background pattern for consistency
+// Reuse the background pattern for consistency okay
 function BackgroundPattern() {
   return (
     <>
@@ -59,7 +59,7 @@ function BackgroundPattern() {
 async function getPostData(slug) {
   // Strip .html extension if present
   const cleanSlug = slug.replace(".html", "");
-  
+
   try {
     const response = await axios.get(`https://portal.ieeeaiubsb.com/api/blog/posts/${cleanSlug}`);
     return response.data;

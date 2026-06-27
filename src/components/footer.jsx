@@ -288,7 +288,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 border-t border-gray-900/10 pt-4">
           <p className="text-xs leading-5 text-gray-500">
-            © Copyright IEEE AIUB Student Branch | All Rights Reserved |
+            © Copyright IEEE AIUB Student Branch | All Rights Reserved | IEEE AIUB Branch sincerely recognizes Jubayer Rahman for his continuous support |
             Designed and Developed by Webmaster IEEE AIUB Student Branch.
           </p>
         </div>

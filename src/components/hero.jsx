@@ -6,7 +6,15 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const slides = [
+
+
   {
+    //W:\Aiub\IEEE\ieeeaiubsb-frontend\public\images\event\professionalawarenessventure-80.jpg
+    imageSrc: "/images/event/professionalawarenessventure-80.jpg",
+    imageAlt: "image",
+    heading: "IEEE AIUB Student Branch",
+    subheading: "SPAVE 8.0",
+  }, {
     imageSrc: "/images/Spave7.0.png",
     imageAlt: "image",
     heading: "IEEE AIUB Student Branch",

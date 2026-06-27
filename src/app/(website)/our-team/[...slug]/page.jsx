@@ -622,7 +622,7 @@ const excom25 = [
     linkedinUrl: "",
     recognition: "Assistant Professor, DEPARTMENT OF ELECTRICAL & ELECTRONIC ENGINEERING, AIUB",
     role: "Counselor",
-    imageUrl: "/images/committee/com25/Excom/gourSir.png",
+    imageUrl: "/images/committee/com25/Excom/gour_sir.png",
   },
   {
     name: "Sameen Khan",
@@ -631,7 +631,7 @@ const excom25 = [
     linkedinUrl: "https://www.linkedin.com/in/sameen-khan-b56997267",
     recognition: "BSc. in EEE",
     role: "Chairperson",
-    imageUrl: "/images/committee/com25/Excom/sameen.jpeg",
+    imageUrl: "/images/committee/com24/Excom/sameen.jpg",
   },
   {
     name: "Shifat Arman Shiam",
@@ -640,7 +640,7 @@ const excom25 = [
     linkedinUrl: "https://www.linkedin.com/in/shifat-arman-629880252/",
     recognition: "BSc. in CSE",
     role: "Vice-Chairperson",
-    imageUrl: "/images/committee/com25/Excom/shifat.png",
+    imageUrl: "/images/committee/com24/Excom/Shifat_arman.png",
   },
   {
     name: "Mohaimenul Haque",
@@ -648,8 +648,8 @@ const excom25 = [
     facebookUrl: "https://www.facebook.com/mhMohan19",
     linkedinUrl: "https://www.linkedin.com/in/mhmohan20/",
     recognition: "BSc. in CSE",
-    role: "Treasurer",
-    imageUrl: "/images/committee/com25/Excom/mohan.png",
+    role: "Treasurer",  
+    imageUrl: "/images/committee/mohan.jpg",
   },
   {
     name: "Nazmul Islam Rimon",
@@ -693,8 +693,8 @@ const excom25 = [
     facebookUrl: "",
     linkedinUrl: "",
     recognition: "BSc. in CSE",
-    role: "Webmaster",
-    imageUrl: "/images/committee/com25/Excom/shohag.png",
+    role: "Webmaster", 
+    imageUrl: "/images/committee/com24/Excom/Md_Sohag_Islam.jpg",
   },
   {
     name: "Usha Hossain Abrar",

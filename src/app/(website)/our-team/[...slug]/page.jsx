@@ -614,6 +614,155 @@ const excom24 = [
   },
 ];
 
+const excom26 = [
+  {
+    name: "DR. GOUR CHAND MAZUMDER",
+    email: "mailto:dr.mazumder@aiub.edu",
+    facebookUrl: "",
+    linkedinUrl: "",
+    recognition: "Assistant Professor, DEPARTMENT OF ELECTRICAL & ELECTRONIC ENGINEERING, AIUB",
+    role: "Counselor",
+    imageUrl: "/images/committee/com25/Excom/gour_sir.png",
+  },
+  {
+    name: "Sameen Khan",
+    email: "mailto:sameenkhan@ieee.org",
+    facebookUrl: "https://www.facebook.com/sameen.khan20",
+    linkedinUrl: "https://www.linkedin.com/in/sameen-khan-b56997267",
+    recognition: "BSc. in EEE",
+    role: "Chairperson",
+    imageUrl: "/images/committee/com24/Excom/sameen.jpg",
+  },
+  {
+    name: "Shifat Arman Shiam",
+    email: "mailto:shifatshiam@ieee.org",
+    facebookUrl: "https://www.facebook.com/shifatarman.shiam",
+    linkedinUrl: "https://www.linkedin.com/in/shifat-arman-629880252/",
+    recognition: "BSc. in CSE",
+    role: "Vice-Chairperson",
+    imageUrl: "/images/committee/com24/Excom/Shifat_arman.png",
+  },
+  {
+    name: "Mohaimenul Haque",
+    email: "mailto:mhmohan@ieee.org",
+    facebookUrl: "https://www.facebook.com/mhMohan19",
+    linkedinUrl: "https://www.linkedin.com/in/mhmohan20/",
+    recognition: "BSc. in CSE",
+    role: "Treasurer",  
+    imageUrl: "/images/committee/mohan.jpg",
+  },
+  {
+    name: "Nazmul Islam Rimon",
+    email: "mailto:remonakon101@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/1W8cChR6so/",
+    linkedinUrl: "https://www.linkedin.com/in/nazmul-islam-b21021293/",
+    recognition: "BSc. in EEE",
+    role: "Event Coordinator",
+    imageUrl: "/images/committee/com25/Excom/Nazmul.jpg",
+  },
+  {
+    name: "Zabib Hasan",
+    email: "mailto:zabib_ayat@ieee.org",
+    facebookUrl: "https://www.facebook.com/share/19p8uTJqnn/",
+    linkedinUrl: "https://www.linkedin.com/in/hasan-zabib-773082346/",
+    recognition: "BSc. in CSE",
+    role: "Event Coordinator",
+    imageUrl: "/images/committee/com25/Excom/zabib.png",
+  },
+  {
+    name: "Md. Minhajul Islam",
+    email: "mailto:minhajul.islam@ieee.org",
+    facebookUrl: "https://www.facebook.com/share/1BtqCrHhPN/",
+    linkedinUrl: "https://www.linkedin.com/in/md-minhajul-islam-16b3101a8/",
+    recognition: "BSc. in EEE",
+    role: "Publication Coordinator",
+    imageUrl: "/images/committee/com25/Excom/utsho.png",
+  },
+  {
+    name: "Shajidur Rahman Rafi",
+    email: "mailto:rafi91094@gmail.com",
+    facebookUrl: "",
+    linkedinUrl: "",
+    recognition: "BSc. in EEE",
+    role: "Creative Team Lead",
+    imageUrl: "/images/committee/com24/volunteers/Shajidur Rahman Rafi .jpg",
+  },
+  {
+    name: "Md Sohag Islam",
+    email: "mailto:mdsohag@ieee.org",
+    facebookUrl: "",
+    linkedinUrl: "",
+    recognition: "BSc. in CSE",
+    role: "Webmaster", 
+    imageUrl: "/images/committee/com24/Excom/Md_Sohag_Islam.jpg",
+  },
+  {
+    name: "Usha Hossain Abrar",
+    email: "mailto:abrarushahossain222@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/19F9W6Mg6M/",
+    linkedinUrl: "https://www.linkedin.com/in/usha-hossain-abrar-631170307/",
+    recognition: "BSc. in EEE",
+    role: "Logistics Coordinator",
+    //W:\Aiub\IEEE\ieeeaiubsb-frontend\public\images\committee\com24\volunteers\USHA HOSSAIN ABRAR .jpeg
+    imageUrl: "/images/committee/com24/volunteers/USHA HOSSAIN ABRAR .jpeg",
+  },
+  {
+    name: "Md. Farhan Afsar Shakib",
+    email: "mailto:fasakib75@gmail.com",
+    facebookUrl: "https://www.facebook.com/share/1Anc9vhRVC/",
+    linkedinUrl: "https://www.linkedin.com/in/f-a-sakib-4545b02b5/",
+    recognition: "BSc. in IPE",
+    role: "Logistics Coordinator",
+    //W:\Aiub\IEEE\ieeeaiubsb-frontend\public\images\committee\com24\volunteers\MD.Farhan Afsar Shakib_.jpg
+    imageUrl: "/images/committee/com24/volunteers/MD.Farhan Afsar Shakib_.jpg",
+  },
+  {
+    name: "Md.Fahim Abdullah",
+    email: "mailto:mojumderfahim@iee.org",
+    facebookUrl: "https://www.facebook.com/FahimMojumder1234",
+    linkedinUrl: "https://www.linkedin.com/in/fahim-mojumder-41a9b2285",
+    recognition: "BSc. in CSE",
+    role: "Photojournalist",
+    imageUrl: "/images/committee/Fahim Mojumder.jpg",
+  },
+  {
+    name: "Rafith Tarafder",
+    email: "mailto:tarafderrafith@ieee.org",
+    facebookUrl: "https://www.facebook.com/share/161En5CLFm/",
+    linkedinUrl: "https://www.linkedin.com/in/rafith-tarafder-7491a72a8/",
+    recognition: "BSc. in CSE",
+    role: "Public Relation Coordinator",
+    imageUrl: "/images/committee/com25/Excom/rafith.png",
+  },
+  {
+    name: "Nuren Tasnim Risha",
+    email: "mailto:nurentasnim@ieee.org",
+    facebookUrl: "https://www.facebook.com/share/1BoJqgqx3t/",
+    linkedinUrl: "https://www.linkedin.com/in/nuren-tasnim-ab67942b5/",
+    recognition: "BSc. in CSE",
+    role: "Public Relation Coordinator",
+    imageUrl: "/images/committee/com25/Excom/risha.png",
+  },
+  {
+    name: "Sreekant Sutradhar",
+    email: "mailto:sreekant_@ieee.org",
+    facebookUrl: "https://www.facebook.com/share/1G2pB4BNg8/",
+    linkedinUrl: "https://www.linkedin.com/in/sreekant-sutradhar-ab424a37b/",
+    recognition: "BSc. in EEE",
+    role: "Membership Development Coordinator",
+    imageUrl: "/images/committee/com24/volunteers/Sreekant Sutradhar_.jpg",
+  },
+  {
+    name: "Md. Shihab Uddin",
+    email: "mailto:md.shihab@ieee.org",
+    facebookUrl: "https://www.facebook.com/mdshihab9995?mibextid=ZbWKwL",
+    linkedinUrl: "https://www.linkedin.com/in/mdshihab26/",
+    recognition: "BSc. in CSE",
+    role: "Membership Development Coordinator",
+    imageUrl: "/images/committee/com25/Excom/shihab.png",
+  },
+];
+
 const excom25 = [
   {
     name: "DR. GOUR CHAND MAZUMDER",
@@ -721,7 +870,7 @@ const excom25 = [
     linkedinUrl: "https://www.linkedin.com/in/fahim-mojumder-41a9b2285",
     recognition: "BSc. in CSE",
     role: "Photojournalist",
-    imageUrl: "/images/committee/com25/Excom/fahim.png",
+    imageUrl: "/images/committee/Fahim Mojumder.jpg",
   },
   {
     name: "Rafith Tarafder",
@@ -2924,6 +3073,8 @@ export default function Page({ params }) {
   if (isNaN(params.slug[0])) {
     switch (params.slug[0]) {
       case "executive-committee":
+        return <EXCOM25 people={excom26} year={2026} />;
+      case "executive-committee":
         return <EXCOM25 people={excom25} year={2025} />;
       case "volunteers":
         return <VOL23 people={vol25} year={2025} />;
@@ -2946,6 +3097,8 @@ export default function Page({ params }) {
     switch (params.slug[1]) {
 
       case "executive-committee":
+        if (params.slug[0] == 2026)
+          return <EXCOM people={excom26} year={2026} />;
         if (params.slug[0] == 2025)
           return <EXCOM people={excom25} year={2025} />;
         if (params.slug[0] == 2024)

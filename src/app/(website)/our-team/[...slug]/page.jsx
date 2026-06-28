@@ -1557,6 +1557,16 @@ const vol24 = [
 ];
 
 const vol25 = [
+  
+  {
+    name: "Sadman Sakib Chouwdhury",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/mahin.png",
+    email: "mahinc021@gmail.com",
+    facebookUrl: "https://www.facebook.com/MahinChowdhury55",
+    linkedinUrl: "",
+  },
   {
     name: "Mohona Musarrat",
     role: "volunteer",
@@ -1729,15 +1739,6 @@ const vol25 = [
     imageUrl: "/images/committee/com25/volunteers/farhan.png",
     email: "farhanahmed7389@gmail.com",
     facebookUrl: "https://www.facebook.com/farhanahmed738",
-    linkedinUrl: "",
-  },
-  {
-    name: "Sadman Sakib Chouwdhury",
-    role: "volunteer",
-    recognition: "Bsc. in CSE",
-    imageUrl: "/images/committee/com25/volunteers/mahin.png",
-    email: "mahinc021@gmail.com",
-    facebookUrl: "https://www.facebook.com/MahinChowdhury55",
     linkedinUrl: "",
   },
   {

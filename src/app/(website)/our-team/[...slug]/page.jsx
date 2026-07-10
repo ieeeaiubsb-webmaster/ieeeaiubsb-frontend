@@ -1559,15 +1559,6 @@ const vol24 = [
 const vol25 = [
   
   {
-    name: "Sadman Sakib Chowdhury",
-    role: "volunteer",
-    recognition: "Bsc. in CSE",
-    imageUrl: "/images/committee/com25/volunteers/mahin.png",
-    email: "mahinc021@gmail.com",
-    facebookUrl: "https://www.facebook.com/MahinChowdhury55",
-    linkedinUrl: "",
-  },
-  {
     name: "Mohona Musarrat",
     role: "volunteer",
     recognition: "BSc. in CNCS",
@@ -1604,6 +1595,15 @@ const vol25 = [
     linkedinUrl: "http://linkedin.com/in/namia-rahman-1057a6270",
   },
 
+  {
+    name: "Sadman Sakib Chowdhury",
+    role: "volunteer",
+    recognition: "Bsc. in CSE",
+    imageUrl: "/images/committee/com25/volunteers/mahin.png",
+    email: "mahinc021@gmail.com",
+    facebookUrl: "https://www.facebook.com/MahinChowdhury55",
+    linkedinUrl: "",
+  },
   {
     name: "Abdullah Al Arafat",
     role: "volunteer",

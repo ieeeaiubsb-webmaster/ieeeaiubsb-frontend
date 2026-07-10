@@ -1559,7 +1559,7 @@ const vol24 = [
 const vol25 = [
   
   {
-    name: "Sadman Sakib Chouwdhury",
+    name: "Sadman Sakib Chowdhury",
     role: "volunteer",
     recognition: "Bsc. in CSE",
     imageUrl: "/images/committee/com25/volunteers/mahin.png",
@@ -1579,7 +1579,7 @@ const vol25 = [
   {
     name: "Rehnuma Tasnim Promi",
     role: "volunteer",
-    recognition: "",
+    recognition: "Bsc. in CSE",
     imageUrl: "/images/committee/com25/volunteers/promi.png",
     email: "rehnumatasnimpromi@gmail.com",
     facebookUrl: "https://www.facebook.com/share/12KHeYfviAW/",

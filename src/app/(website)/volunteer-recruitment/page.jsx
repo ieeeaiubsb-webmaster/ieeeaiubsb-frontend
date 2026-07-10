@@ -2,8 +2,7 @@
 import { Input, Select, SelectItem, Textarea } from "@nextui-org/react";
 import { useState, useMemo } from "react";
 import axios from "axios";
-import { storage } from "@/app/firebase";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+
 
 export default function Page() {
   const [firstNameValue, setFirstNameValue] = useState("");
@@ -32,9 +31,8 @@ export default function Page() {
   const [qualificationValue, setQualificationValue] = useState("");
   const [whyJoinIeee, setWhyJoinIeee] = useState("");
   const [resumeValue, setResumeValue] = useState(null);
-  const [resumeUrl, setResumeUrl] = useState("");
   const [photoValue, setPhotoValue] = useState(null);
-  const [photoUrl, setPhotoUrl] = useState("");
+
 
   const isNameInvalid = useMemo(() => {
     return (name) => {
@@ -43,6 +41,7 @@ export default function Page() {
     };
   });
 
+
   const isEmailInvalid = useMemo(() => {
     if (emailValue === "") return false;
     return emailValue.match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i)
@@ -50,18 +49,22 @@ export default function Page() {
       : true;
   });
 
+
   const validateEmail = (value) =>
     value.match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i);
+
 
   const isPhoneInvalid = useMemo(() => {
     if (phoneValue === "") return false;
     return phoneValue.match(/^(01|\+8801)[3-9][0-9]{8}$/) ? false : true;
   });
 
+
   const isAiubIdInvalid = useMemo(() => {
     if (aiubIdValue === "") return false;
     return aiubIdValue.match(/^(1[0-9]|2[0-4])-\d{5}-[1-3]$/) ? false : true;
   });
+
 
   const isCompletedCreditsInvalid = useMemo(() => {
     if (completedCreditsValue == "") return false;
@@ -70,6 +73,7 @@ export default function Page() {
       : true;
   });
 
+
   const isCurrentCgpaInvalid = useMemo(() => {
     if (currentCgpaValue == "") return false;
     return currentCgpaValue.match(/^[0-3](\.\d{1,2})?$|^4(\.0{1,2})?$/)
@@ -77,12 +81,6 @@ export default function Page() {
       : true;
   });
 
-  // const isPhotoInvalid = useMemo(() => {
-  //   if (photoValue == null) return false;
-  //   const photoExtension = photoValue.slice(((photoValue.lastIndexOf(".") - 2) >>> 0) + 2);
-  //   console.log(photoExtension);
-  //   return photoExtension.match(/(png|jpe?g|webp)$/i) ? false : true;
-  // });
 
   const [departmentTouched, setDepartmentTouched] = useState(false);
   const [academicYearTouched, setAcademicYearTouched] = useState(false);
@@ -96,8 +94,10 @@ export default function Page() {
   const [isPhotoTounched, setIsPhotoTounched] = useState(false);
   const [isCvTounched, setIsCvTounched] = useState(false);
 
+
   const fileExtension = (file) =>
     file.type.slice(file.name.lastIndexOf("/") + 1);
+
 
   const isFormValid = () => {
     return (
@@ -116,141 +116,130 @@ export default function Page() {
     );
   };
 
+
   const handelCvSubmit = (e) => {
     setIsCvTounched(true);
     setResumeValue(null);
     const selectedFile = e.target.files[0];
 
+
     if (!selectedFile) {
-      // console.log("No file selected");
       setIsCvValid(false);
       return;
     }
+
 
     const fileExtension = selectedFile.name.split(".").pop().toLowerCase();
     const allowedExtensions = ["pdf", "doc", "docx"];
     const fileSize = selectedFile.size;
     const maxSize = 2 * 1024 * 1024; // 2 MB
 
+
     if (!allowedExtensions.includes(fileExtension)) {
-      // console.log("Invalid file type");
       setIsCvValid(false);
       e.target.value = "";
       return;
     }
 
+
     if (fileSize > maxSize) {
-      // console.log("File size too large");
       setIsCvValid(false);
       e.target.value = "";
       return;
     }
     setIsCvValid(true);
     setResumeValue(selectedFile);
-    // console.log("selectedFile", selectedFile);
   };
+
 
   const handlePhotoSubmit = (e) => {
     setIsPhotoTounched(true);
     setPhotoValue(null);
     const selectedFile = e.target.files[0];
 
+
     if (!selectedFile) {
-      // console.log("No file selected");
       setIsPhotoValid(false);
       return;
     }
+
 
     const fileExtension = selectedFile.name.split(".").pop().toLowerCase();
     const allowedExtensions = ["png", "jpg", "jpeg", "webp"];
     const fileSize = selectedFile.size;
     const maxSize = 2 * 1024 * 1024; // 2 MB
 
+
     if (!allowedExtensions.includes(fileExtension)) {
-      // console.log("Invalid file type");
       setIsPhotoValid(false);
       e.target.value = "";
       return;
     }
 
+
     if (fileSize > maxSize) {
-      // console.log("File size too large");
       setIsPhotoValid(false);
       e.target.value = "";
       return;
     }
     setIsPhotoValid(true);
     setPhotoValue(selectedFile);
-    // console.log("selectedFile", selectedFile);
   };
+
 
   const submitform = async (e) => {
     e.preventDefault();
-    // console.log("submitting form");
-    // if (!isFormValid()) {
-    //   console.log("form is not valid");
-    //   return;
-    // }
 
-    // console.log(data);
     if (!photoValue) return alert("Please upload your Photo");
-    else if (!resumeValue) return alert("Please upload your CV/Resume");
-    else {
-      const imageRef = ref(
-        storage,
-        "images/" + firstNameValue + lastNameValue + "_" + aiubIdValue
-      );
-      await uploadBytes(imageRef, photoValue).then(async () => {
-        getDownloadURL(imageRef).then((url) => {
-          setPhotoUrl(url);
-          // console.log(photoUrl);
-        });
-        const resumeRef = ref(
-          storage,
-          "resumes/" + firstNameValue + lastNameValue + "_" + aiubIdValue
-        );
-        await uploadBytes(resumeRef, resumeValue).then(async () => {
-          getDownloadURL(resumeRef).then((url) => {
-            setResumeUrl(url);
-            // console.log(resumeUrl);
-          });
-        });
-      });
+    if (!resumeValue) return alert("Please upload your CV/Resume");
 
-      const data = {
-        firstName: firstNameValue,
-        lastName: lastNameValue,
-        email: emailValue,
-        phone: phoneValue,
-        bloodGroup: Array.from(bloodGroupValue)[0],
-        gender: Array.from(genderValue)[0],
-        aiubId: aiubIdValue,
-        department: Array.from(departmentValue)[0],
-        academicYear: Array.from(academicYearValue)[0],
-        currentCgpa: currentCgpaValue,
-        completedCredits: completedCreditsValue,
-        address: addressValue,
-        facebook: facebookValue,
-        linkedin: linkedinValue,
-        position: Array.from(positionValue)[0],
-        tool: toolValue,
-        portfolio: portfolioValue,
-        isIeeeMember: Array.from(isIeeeMemberValue)[0],
-        ieeeMembershipId: ieeeMembershipIdValue,
-        affiliationWithOtherOrg: affiliationWithOtherOrgValue,
-        previousVolunteeringExperience: previousVolunteeringExperience,
-        qualification: qualificationValue,
-        whyJoinIeee: whyJoinIeee,
-        resume: resumeUrl,
-        photo: photoUrl,
-        year: 2024,
-      };
+    // Package fields & files as FormData
+    const formData = new FormData();
+    formData.append("firstName", firstNameValue);
+    formData.append("lastName", lastNameValue);
+    formData.append("email", emailValue);
+    formData.append("phone", phoneValue);
+    formData.append("bloodGroup", Array.from(bloodGroupValue)[0] || "");
+    formData.append("gender", Array.from(genderValue)[0] || "");
+    formData.append("aiubId", aiubIdValue);
+    formData.append("department", Array.from(departmentValue)[0] || "");
+    formData.append("academicYear", Array.from(academicYearValue)[0] || "");
+    formData.append("currentCgpa", currentCgpaValue);
+    formData.append("completedCredits", completedCreditsValue);
+    formData.append("address", addressValue);
+    formData.append("facebook", facebookValue);
+    formData.append("linkedin", linkedinValue);
+    formData.append("position", Array.from(positionValue)[0] || "");
+    formData.append("tool", toolValue);
+    formData.append("portfolio", portfolioValue);
+    formData.append("isIeeeMember", Array.from(isIeeeMemberValue)[0] || "");
+    formData.append("ieeeMembershipId", ieeeMembershipIdValue);
+    formData.append("affiliationWithOtherOrg", affiliationWithOtherOrgValue);
+    formData.append("previousVolunteeringExperience", previousVolunteeringExperience);
+    formData.append("qualification", qualificationValue);
+    formData.append("whyJoinIeee", whyJoinIeee);
+    
+    // Append actual File objects directly
+    formData.append("photo", photoValue);
+    formData.append("resume", resumeValue);
+    formData.append("year", 2024);
+
+    try {
       const response = await axios.post(
-        "https://ieeeaiubsb.pockethost.io/api/collections/volunteer_recruitment/records",
-        data
+        "https://portal.ieeeaiubsb.com/api/volunteer-recruitment",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
       );
-      if (response.status == 200) setIsFormSubmitted(true);
-      // console.log(response);
+      if (response.status === 200) {
+        setIsFormSubmitted(true);
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Failed to submit form. Please verify inputs and try again.");
     }
   };
 
@@ -396,11 +385,12 @@ export default function Page() {
                 {/* <span className="text-red-600"> XX/02/2024. </span>* */}
               </p>
 
-              <p className="font-bold">
+
+        {/* <p className="font-bold">
                 For any query, don’t hesitate to contact: <br />
                 MD. Ahnaf Ibtahaz <br />
                 Contact Number: 01920299196
-              </p>
+              </p> **/ }
               <p>
                 For further updates and a more detailed overview of our Student
                 Branch, please check out our social handles below- <br />
@@ -473,6 +463,7 @@ export default function Page() {
                   </div>
                 </div>
 
+
                 <div className="col-span-full">
                   <div className="mt-2">
                     <Input
@@ -493,6 +484,7 @@ export default function Page() {
                   </div>
                 </div>
 
+
                 <div className="col-span-full">
                   <div className="mt-2">
                     <Input
@@ -512,6 +504,7 @@ export default function Page() {
                     />
                   </div>
                 </div>
+
 
                 <div className="mt-2 w-full grid grid-cols-2 gap-2">
                   <Select
@@ -560,6 +553,7 @@ export default function Page() {
                     </SelectItem>
                   </Select>
 
+
                   <Select
                     isRequired
                     label="Gender"
@@ -587,6 +581,7 @@ export default function Page() {
                   </Select>
                 </div>
 
+
                 <div className="col-span-full">
                   <div className="mt-2">
                     <Input
@@ -606,6 +601,7 @@ export default function Page() {
                     />
                   </div>
                 </div>
+
 
                 <div className="mt-2 w-full grid grid-cols-2 gap-2">
                   <Select
@@ -642,6 +638,7 @@ export default function Page() {
                     </SelectItem>
                   </Select>
 
+
                   <Select
                     isRequired
                     label="Academic Year"
@@ -676,6 +673,7 @@ export default function Page() {
                     </SelectItem>
                   </Select>
                 </div>
+
 
                 <div className="mt-2 w-full grid grid-cols-2 gap-2">
                   <Input
@@ -721,6 +719,7 @@ export default function Page() {
                   />
                 </div>
 
+
                 <div className="col-span-full">
                   <div className="mt-2">
                     <Input
@@ -735,6 +734,7 @@ export default function Page() {
                     />
                   </div>
                 </div>
+
 
                 <div className="col-span-full">
                   <div className="mt-2">
@@ -751,6 +751,7 @@ export default function Page() {
                   </div>
                 </div>
 
+
                 <div className="col-span-full">
                   <div className="mt-2">
                     <Input
@@ -765,6 +766,7 @@ export default function Page() {
                     />
                   </div>
                 </div>
+
 
                 <div className="col-span-full">
                   <div className="mt-2">
@@ -837,6 +839,7 @@ export default function Page() {
                   </div>
                 </div>
 
+
                 {positionValue.size > 0 &&
                   (Array.from(positionValue)[0] == "Graphics Designer" ||
                     Array.from(positionValue)[0] == "Video Editor") && (
@@ -855,6 +858,7 @@ export default function Page() {
                       </div>
                     </div>
                   )}
+
 
                 {positionValue.size > 0 &&
                   Array.from(positionValue)[0] == "Website Development" && (
@@ -876,6 +880,7 @@ export default function Page() {
                     </div>
                   )}
 
+
                 {positionValue.size > 0 &&
                   Array.from(positionValue)[0] == "Photojournalist" && (
                     <div className="col-span-full">
@@ -895,6 +900,7 @@ export default function Page() {
                       </div>
                     </div>
                   )}
+
 
                 {positionValue.size > 0 &&
                   (Array.from(positionValue)[0] == "Graphics Designer" ||
@@ -916,6 +922,7 @@ export default function Page() {
                       </div>
                     </div>
                   )}
+
 
                 <div className="mt-2 w-full grid grid-cols-1 md:grid-cols-2 gap-2">
                   <Select
@@ -946,6 +953,7 @@ export default function Page() {
                     </SelectItem>
                   </Select>
 
+
                   <Input
                     isDisabled={
                       isIeeeMemberValue.size == 0 ||
@@ -960,6 +968,7 @@ export default function Page() {
                     className="w-full"
                   />
                 </div>
+
 
                 <div className="col-span-full">
                   <div className="mt-2">
@@ -980,6 +989,7 @@ export default function Page() {
                     />
                   </div>
                 </div>
+
 
                 <div className="col-span-full">
                   <div className="mt-2">
@@ -1007,6 +1017,7 @@ export default function Page() {
                   </div>
                 </div>
 
+
                 <div className="col-span-full">
                   <div className="mt-2">
                     <Textarea
@@ -1033,6 +1044,7 @@ export default function Page() {
                   </div>
                 </div>
 
+
                 <div className="col-span-full">
                   <div className="mt-2">
                     <Textarea
@@ -1057,6 +1069,7 @@ export default function Page() {
                     />
                   </div>
                 </div>
+
 
                 <div className="mt-2 w-full grid grid-cols-2 gap-2">
                   <label
@@ -1109,6 +1122,7 @@ export default function Page() {
                       </>
                     )}
                   </label>
+
 
                   <label
                     htmlFor="resumeUpload"
@@ -1191,19 +1205,11 @@ export default function Page() {
                 Best of Luck
               </p>
               <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                Thank you for for your interest.
+                Submission Successful!
               </h1>
               <p className="mt-6 text-base leading-7 text-gray-600">
-                Please check your email for further instructions.
+                Thank you for applying. We will review your application and get back to you soon.
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="/"
-                  className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-                >
-                  Go back to Home Page
-                </a>
-              </div>
             </div>
           </main>
         )}
@@ -1211,3 +1217,5 @@ export default function Page() {
     </div>
   );
 }
+
+

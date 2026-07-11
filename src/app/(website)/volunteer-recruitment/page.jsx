@@ -222,7 +222,7 @@ export default function Page() {
     // Append actual File objects directly
     formData.append("photo", photoValue);
     formData.append("resume", resumeValue);
-    formData.append("year", 2024);
+    formData.append("year", 2026);
 
     try {
       const response = await axios.post(
@@ -265,7 +265,7 @@ export default function Page() {
                 the <span className="font-bold">IEEE AIUB Student Branch</span>{" "}
                 – the perfect place for you! The{" "}
                 <span className="font-bold">IEEE AIUB Student Branch</span> is
-                recruiting volunteers for the year 2024. Join and be a part of
+                recruiting volunteers for the year 2026. Join and be a part of
                 one of the top Student Branches within the IEEE Bangladesh
                 Section. Seize the chance to refine your skills, heighten your
                 career opportunities and elevate your potential as a significant
@@ -376,13 +376,13 @@ export default function Page() {
                 can view)
               </p>
               <p className="font-bold text-red-600">
-                Registration Deadline: 06/03/2024
+                Registration Deadline: 06/03/2026
               </p>
               <p className="text-red-500">
                 {
                   "* Selected candidates in the primary phase will be informed through email to sit for VIVA/Skill Assessment."
                 }
-                {/* <span className="text-red-600"> XX/02/2024. </span>* */}
+                {/* <span className="text-red-600"> XX/02/2026. </span>* */}
               </p>
 
 
@@ -412,7 +412,7 @@ export default function Page() {
             </div>
             {/* desc end */}
             <div className="text-4xl w-full text-center pt-8 bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent font-bold">
-              Volunteer Recruitment 2024
+              Volunteer Recruitment 2026
             </div>
             <div className="px-4 py-6 sm:p-8 grid place-items-center">
               <div className="max-w-md w-full">

@@ -375,9 +375,9 @@ export default function Page() {
                 forget to make the accessibility setting: Anyone with the link
                 can view)
               </p>
-              <p className="font-bold text-red-600">
+              {/* <p className="font-bold text-red-600">
                 Registration Deadline: 06/03/2026
-              </p>
+              </p> */}
               <p className="text-red-500">
                 {
                   "* Selected candidates in the primary phase will be informed through email to sit for VIVA/Skill Assessment."

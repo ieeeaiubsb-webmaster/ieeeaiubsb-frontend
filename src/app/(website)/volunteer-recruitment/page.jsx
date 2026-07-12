@@ -326,7 +326,7 @@ export default function Page() {
                   <li>
                     <span className="font-bold">Web Designing Team:</span>The
                     ideal Candidate should be a dedicated, punctual and
-                    hardworking individual skilled in WordPress, HTML, Website
+                    hardworking individual skilled in React, PHP, HTML, CSS , Javascript Website
                     Development and Website Management Skills. <br />
                     <br /> [For individuals interested in Web Designing Team, if
                     possible, add your portfolio to your CV]

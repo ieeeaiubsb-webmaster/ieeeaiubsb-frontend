@@ -62,7 +62,7 @@ export default function Page() {
 
   const isAiubIdInvalid = useMemo(() => {
     if (aiubIdValue === "") return false;
-    return aiubIdValue.match(/^(1[0-9]|2[0-4])-\d{5}-[1-3]$/) ? false : true;
+    return aiubIdValue.match(/^(1[0-9]|2[0-6])-\d{5}-[1-3]$/) ? false : true;
   });
 
 
